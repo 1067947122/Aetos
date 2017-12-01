@@ -5,6 +5,7 @@ import time
 from HTMLTestRunner import  HTMLTestRunner
 from appium import webdriver
 from time import sleep
+import os
 from lib.sendmail import *
 import sys
 reload(sys)
