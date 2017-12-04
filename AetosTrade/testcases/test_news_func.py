@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import *
 import os,sys
+import time
+from time import sleep
+from lib.common_class import Login
 class News(Login):
     def test_keyword_search_news(self):
         """通过关键字查看新闻"""

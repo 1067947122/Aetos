@@ -12,7 +12,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 
-
 desired_caps = {}
 desired_caps['platformName'] = 'Android' #平台名称
 desired_caps['platformVersion'] = '6.0.1' #版本号

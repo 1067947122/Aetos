@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import *
+import os,sys,time
+from time import sleep
+from lib.common_class import Login
 class Edit(Login):
     def test_edit_add_customize_product(self):
         """全选产品添加到自选中，需要各功能中无产品显示在页面"""

@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 import os,sys
-from common import *
+from lib.common import login
 class Login(unittest.TestCase):
     def setUp(self):
         dic = {}

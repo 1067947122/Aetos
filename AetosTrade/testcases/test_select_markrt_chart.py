@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import *
+from lib.common_class import Login
+import os,time
+from time import sleep
 class MarketChart(Login):
     def test_select_market_chart(self):
         """查看产品的行情走势图"""

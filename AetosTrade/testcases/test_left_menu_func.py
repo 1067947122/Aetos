@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 import os,sys
 from appium.webdriver.common.touch_action import TouchAction
-from lib.common_class import *
+from lib.common_class import Login
 class Menu(Login):
     def test_left_menu_success(self):
         """左菜单点击能够正确跳转到相关页面"""

@@ -7,7 +7,7 @@ from email.mime.base import MIMEBase
 from email.utils import parseaddr, formataddr
 from email import MIMEMultipart
 from email import Encoders
-from lib.common import *
+from common import read_ini
 import os,sys
 def _format_addr(s):
     name, addr = parseaddr(s)

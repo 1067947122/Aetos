@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import *
+from lib.common_class import Login
+import os,sys,time
+from time import sleep
 class Upload(Login):
     def test_upload_head_picture(self):
         """用户上传头像"""

@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 import time
 from time import sleep
-from lib.common import read_ini,is_id_exist
+from lib.common import read_ini
 from appium.webdriver.common.touch_action import TouchAction
 from appium import webdriver
 import unittest,os

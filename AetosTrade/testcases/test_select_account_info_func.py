@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import *
+from lib.common_class import Login
+import os,time
 class AccountInfo(Login):
     def test_select_account_info(self):
         """查看用户的账户详情信息"""

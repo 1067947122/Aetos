@@ -10,18 +10,15 @@ from lib.sendmail import *
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
-from lib.common import *
-from testcases.test_news_func import News
+from testcases.test_login_func import LoginApp
 if __name__ == "__main__":
     suite = unittest.TestSuite()
     loader = unittest.TestLoader()
-    suite.addTests(loader.loadTestsFromTestCase(News))
+    suite.addTests(loader.loadTestsFromTestCase(LoginApp))
     #test_dir = "./testcases"
     file = open("./reports/test_reports_%s.html" % time.strftime("%Y-%m-%d %H-%M-%S"),"wb")
-    runner = HTMLTestRunner(
-        stream=file,
-         title=u"AetosTrade自动化测试报告",
-         description=u"用例执行情况:")
+    runner = HTMLTestRunner(stream=file,title=u"AetosTrade自动化测试报告",
+                            description=u"用例执行情况:")
     #discover = unittest.defaultTestLoader.discover(test_dir, pattern="test*.py")
     runner.run(suite)
     file.close()

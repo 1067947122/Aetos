@@ -16,7 +16,7 @@ import logging.handlers
 
 def read_ini():
     con = configparser.ConfigParser()
-    con.read("../config.ini")
+    con.read("./config.ini")
     username = con.get("login","username")
     password = con.get("login","password")
     error_username = con.get("login","error_username")
