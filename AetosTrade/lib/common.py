@@ -8,11 +8,22 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 import os,sys
+import zipfile
 from HTMLTestRunner import  HTMLTestRunner
 from appium.webdriver.common.touch_action import TouchAction
 import configparser
 import logging
 import logging.handlers
+
+def login(driver):
+    username = read_ini()[0]
+    password = read_ini()[1]
+    driver.implicitly_wait(10)
+    driver.find_element_by_id("login_user_et_account").clear()
+    driver.find_element_by_id("login_user_et_password").clear()
+    driver.find_element_by_id("login_user_et_account").send_keys(username)
+    driver.find_element_by_id("login_user_et_password").send_keys(password)
+    driver.find_element_by_id("login_btn").click()
 
 def read_ini():
     con = configparser.ConfigParser()
@@ -34,43 +45,21 @@ def read_ini():
                 send,receive,pwd,server_163]
     return user
 
+def zip_dir(dirname,zipfilename):
+    file_list = []
+    if os.path.isfile(dirname):
+        file_list.append(dirname)
+    else:
+        for root, dirs, files in os.walk(dirname):
+            for name in files:
+                file_list.append(os.path.join(root, name))
+    zf = zipfile.ZipFile(zipfilename, "w", zipfile.zlib.DEFLATED)
+    for tar in file_list:
+        arc_name = tar[len(dirname):]
+        zf.write(tar, arc_name)
+    zf.close()
 
-# def screenshot(driver):
-#     driver.get_screenshot_as_file("../screenshots/shots_%s.png" % time.strftime("%Y-%m-%d %H-%M-%S"))
-# #模拟滑动
-# def getSize(driver):
-#     x = driver.get_window_size()['width']
-#     y = driver.get_window_size()['height']
-#     print x,y
-#     return x,y
-#
-# def swipeLeft(driver,t):
-#     screen = getSize(driver)
-#     driver.swipe(screen[0]*0.75, screen[1]*0.5, screen[0]*0.25, screen[1]*0.5, t)
-#
-# def swipeUp(driver,t):
-#     screen = getSize(driver)
-#     driver.swipe(screen[0]*0.5, screen[1]*0.57, screen[0]*0.5, screen[1]*0.25, t)
-#
-# def swipeDown(driver,t):
-#     w_size = getSize(driver)
-#     x1 = int(w_size[0] * 0.5)    #获取x坐标，根据实际调整相乘参数
-#     y1 = int(w_size[1] * 0.2)    #获取起始y坐标，根据实际调整相乘参数
-#     y2 = int(w_size[1] * 0.8)    #获取终点y坐标，根据实际调整相乘参数
-#     driver.swipe(x1, y1, x1, y2,t)
-#
-# def swipeRight(driver,t):
-#     w_size = getSize(driver)
-#     x1 = int(w_size[0] * 0.05)
-def login(driver):
-    username = read_ini()[0]
-    password = read_ini()[1]
-    driver.implicitly_wait(10)
-    driver.find_element_by_id("login_user_et_account").clear()
-    driver.find_element_by_id("login_user_et_password").clear()
-    driver.find_element_by_id("login_user_et_account").send_keys(username)
-    driver.find_element_by_id("login_user_et_password").send_keys(password)
-    driver.find_element_by_id("login_btn").click()
+
 
 def log_output():
     logger = logging.getLogger('process')
@@ -113,48 +102,34 @@ def is_id_exist(driver,ele):
         print True
     except:
         print False
-#TouchAction
-#TouchAction方法是appium自已定义的新方法
-# * 短按 (press) * 释放 (release) * 移动到 (moveTo) * 点击 (tap) * 等待 (wait) * 长按 (longPress)  * 执行 (perform)
-#以python为例
-#
-#
-# TouchAction(driver).press(el0).moveTo(el1).release()
-# #TouchAction 在python中是一个类它下面的方法有
-#
-# #长按
-# long_press(self, el=None, x=None, y=None, duration=1000(ms))
-# #短按
-# press(self, el=None, x=None, y=None)
-# #点击
-# tap(self,el=None,x=None,y=None,count=1)
-# #释放
-# release(self)
-# #移动到
-# move_to(self,el=None,x=None,y=None)
-# #等待
-# wait(self,ms=0)
-# #执行
-# perform(self)
-#
-#
-#
-# #关于perform 官网给的伪代码中讲
-# TouchAction().tap(el).perform()
-# #与
-# driver.perform(TouchAction().tap(el))
-# #效果一致
-#
-#
-# #MultiTouch
-# #MultiTouch 多点触控 它只提供了两个方法 一个add 一个执行perform.官网例子为
-# from appium.webdriver.common.touch_action import TouchAction
-# from appium.webdriver.common.multi_action import MultiAction
-#
-# action0 = TouchAction().tap(el1)
-# action1 = TouchAction().tap(el2)
-# MultiTouch().add(action0).add(action1).perform
 
+# def screenshot(driver):
+#     driver.get_screenshot_as_file("../screenshots/shots_%s.png" % time.strftime("%Y-%m-%d %H-%M-%S"))
+# #模拟滑动
+# def getSize(driver):
+#     x = driver.get_window_size()['width']
+#     y = driver.get_window_size()['height']
+#     print x,y
+#     return x,y
+#
+# def swipeLeft(driver,t):
+#     screen = getSize(driver)
+#     driver.swipe(screen[0]*0.75, screen[1]*0.5, screen[0]*0.25, screen[1]*0.5, t)
+#
+# def swipeUp(driver,t):
+#     screen = getSize(driver)
+#     driver.swipe(screen[0]*0.5, screen[1]*0.57, screen[0]*0.5, screen[1]*0.25, t)
+#
+# def swipeDown(driver,t):
+#     w_size = getSize(driver)
+#     x1 = int(w_size[0] * 0.5)    #获取x坐标，根据实际调整相乘参数
+#     y1 = int(w_size[1] * 0.2)    #获取起始y坐标，根据实际调整相乘参数
+#     y2 = int(w_size[1] * 0.8)    #获取终点y坐标，根据实际调整相乘参数
+#     driver.swipe(x1, y1, x1, y2,t)
+#
+# def swipeRight(driver,t):
+#     w_size = getSize(driver)
+#     x1 = int(w_size[0] * 0.05)
 
 
 

@@ -1,12 +1,9 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 import smtplib
-from email.header import Header
 from email.mime.text import MIMEText
+from email.header import Header
 from email.mime.image import MIMEImage
-from email.mime.audio import MIMEAudio
-from email import MIMEMultipart
-from email.utils import parseaddr, formataddr
+from email.mime.multipart import MIMEMultipart
 import os,sys
-import traceback
-import configparser
+

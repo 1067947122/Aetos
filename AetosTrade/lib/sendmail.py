@@ -6,6 +6,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email.utils import parseaddr, formataddr
 from email import MIMEMultipart
+from email.mime.application import MIMEApplication
 from email import Encoders
 from common import read_ini
 import os,sys
@@ -22,19 +23,19 @@ def send_email(new_file,reportname):
     mail = f.read()
 
     msg = MIMEMultipart.MIMEMultipart()  #构造附件
-    att = MIMEText(mail, 'base64', 'gb2312')
-    att["Content-Type"] = 'application/octet-stream'
-    att["Content-Disposition"] = 'attachment;filename = "{0}"'.format(reportname)
-    msg.attach(att)
-
-    # pic = open(os.path.join(os.path.abspath("./"),"screenshots"),"rb")
-    # file = pic.read()
-    # att2 =MIMEBase("application","octet-stream")
-    # att2.set_payload(file)
-    # Encoders.encode_base64(att2)
-    # att2.add_header("Content-Disposition","attachment",filename ="{0}".format("picture"))
-    # msg.attach(att2)
-
+    att1 = MIMEText(mail, 'base64', 'gb2312')
+    att1["Content-Type"] = 'application/octet-stream'
+    att1["Content-Disposition"] = 'attachment;filename = "{0}"'.format(reportname)
+    msg.attach(att1)
+    #构造附件2
+    if os.path.isfile("./screenshots.zip"):
+        file = open("./screenshots.zip","rb").read()
+        att2 = MIMEText(file, 'base64', 'gb2312')
+        att2["Content-Type"] = 'application/octet-stream'
+        att2["Content-Disposition"] = 'attachment;filename = "screenshots.zip"'
+        msg.attach(att2)
+    else:
+        pass
     #构造邮件
     msg['From'] = _format_addr(u'测试邮箱 <%s>' % send)
     msg['To'] = _format_addr(u'王明<%s>' % receive)
