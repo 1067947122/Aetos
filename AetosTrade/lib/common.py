@@ -62,6 +62,9 @@ def zip_dir(dirname,zipfilename):
 
 
 def log_output():
+    LOG_DIR = 'log'
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
     logger = logging.getLogger('process')
     logger.setLevel(logging.DEBUG)
     handler = logging.handlers.TimedRotatingFileHandler(os.path.join(os.path.abspath("./log"),"process_%s.log"% time.strftime("%Y-%m-%d %H-%M-%S")),'D')
@@ -77,6 +80,7 @@ def log_output():
 
     logger.addHandler(console)
     logger.addHandler(handler)
+    return logger
 
 def is_toast_exist(driver,text,timeout=10,poll_frequency=0.5):
    '''is toast exist, return True or False
@@ -130,7 +134,6 @@ def is_id_exist(driver,ele):
 # def swipeRight(driver,t):
 #     w_size = getSize(driver)
 #     x1 = int(w_size[0] * 0.05)
-
 
 
 

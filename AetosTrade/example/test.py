@@ -6,4 +6,5 @@ from email.header import Header
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 import os,sys
+os.path.splitext(__file__)
 
