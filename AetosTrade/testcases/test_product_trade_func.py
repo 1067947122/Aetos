@@ -5,7 +5,7 @@
 import unittest
 import time
 from time import sleep
-from lib.common_class import Login
+from lib.com_class import Login
 from lib.common import read_ini
 import traceback
 import sys,os

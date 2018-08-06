@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import Login
+from lib.com_class import Login
 import os,time
 class AccountInfo(Login):
     def test_select_account_info(self):

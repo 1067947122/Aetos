@@ -3,7 +3,7 @@
 import os,sys
 import time
 from time import sleep
-from lib.common_class import Login
+from lib.com_class import Login
 class News(Login):
     def test_keyword_search_news(self):
         """通过关键字查看新闻"""

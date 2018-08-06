@@ -3,7 +3,7 @@
 import time
 from time import sleep
 from appium.webdriver.common.touch_action import TouchAction
-from lib.common_class import Login
+from lib.com_class import Login
 import sys,os
 class MarketPrice(Login):
     def test_standard_view_select_price(self):

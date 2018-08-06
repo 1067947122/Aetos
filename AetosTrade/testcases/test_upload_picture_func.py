@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
-from lib.common_class import Login
+from lib.com_class import Login
 import os,sys,time
 from time import sleep
 class Upload(Login):
