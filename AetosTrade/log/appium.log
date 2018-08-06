@@ -1,0 +1,387 @@
+2018-08-03 09:41:47:233 - info: [Appium] Welcome to Appium v1.6.3
+2018-08-03 09:41:47:248 - info: [Appium] Non-default server args:
+2018-08-03 09:41:47:250 - info: [Appium]   port: 4700
+2018-08-03 09:41:47:250 - info: [Appium]   bootstrapPort: 4900
+2018-08-03 09:41:47:250 - info: [Appium]   sessionOverride: true
+2018-08-03 09:41:47:251 - info: [Appium]   log: 'C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\log\\appium.log'
+2018-08-03 09:41:47:251 - info: [Appium]   udid: '192.168.218.101:5555'
+2018-08-03 09:41:47:251 - info: [Appium]   noReset: true
+2018-08-03 09:41:47:252 - warn: [Appium] Deprecated server args:
+2018-08-03 09:41:47:253 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.218.101:5555"}'
+2018-08-03 09:41:47:253 - warn: [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2018-08-03 09:41:47:254 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2018-08-03 09:41:47:255 - info: [Appium]   udid: '192.168.218.101:5555'
+2018-08-03 09:41:47:256 - info: [Appium]   noReset: true
+2018-08-03 09:41:47:644 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4700
+2018-08-03 09:42:04:113 - info: [HTTP] --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"}}
+2018-08-03 09:42:04:119 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"},null,{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},null,null]
+2018-08-03 09:42:04:124 - info: [Appium] Creating new AndroidDriver session
+2018-08-03 09:42:04:125 - info: [Appium] Capabilities:
+2018-08-03 09:42:04:125 - info: [Appium]   deviceName: '192.168.218.101:5555'
+2018-08-03 09:42:04:126 - info: [Appium]   app: 'C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk'
+2018-08-03 09:42:04:127 - info: [Appium]   noReset: 'true'
+2018-08-03 09:42:04:127 - info: [Appium]   platformVersion: '5.0'
+2018-08-03 09:42:04:128 - info: [Appium]   appPackage: 'com.aetos'
+2018-08-03 09:42:04:128 - info: [Appium]   platformName: 'Android'
+2018-08-03 09:42:04:128 - info: [Appium]   appActivity: 'com.aetos.ui.module.core.LoadingActivity'
+2018-08-03 09:42:04:129 - info: [Appium]   udid: '192.168.218.101:5555'
+2018-08-03 09:42:04:132 - info: [debug] [AndroidDriver] AndroidDriver version: 1.10.38
+2018-08-03 09:42:04:138 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-08-03 09:42:04:163 - info: [BaseDriver] Session created with session id: 923b0b79-b3e2-43de-8587-f1f1c4db9ccf
+2018-08-03 09:42:04:165 - info: [debug] [AndroidDriver] Getting Java version
+2018-08-03 09:42:04:279 - info: [AndroidDriver] Java version is: 1.8.0_65
+2018-08-03 09:42:04:282 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:04:287 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:04:287 - info: [AndroidDriver] Retrieving device list
+2018-08-03 09:42:04:288 - info: [debug] [ADB] Trying to find a connected android device
+2018-08-03 09:42:04:289 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:04:316 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:04:317 - info: [AndroidDriver] Using device: 192.168.218.101:5555
+2018-08-03 09:42:04:320 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:04:324 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:04:325 - info: [debug] [ADB] Setting device id to 192.168.218.101:5555
+2018-08-03 09:42:04:326 - info: [BaseDriver] Using local app 'C:\Users\Administrator\PycharmProjects\Aetos\AetosTrade\package/AetosTrade.apk'
+2018-08-03 09:42:04:329 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-08-03 09:42:04:342 - info: [AndroidDriver] Starting Android session
+2018-08-03 09:42:04:346 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","wait-for-device"]
+2018-08-03 09:42:04:380 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:04:398 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:04:399 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","echo","ping"]
+2018-08-03 09:42:04:447 - info: [debug] [Logcat] Starting logcat capture
+2018-08-03 09:42:04:476 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-08-03 09:42:04:476 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\io.appium.settings\\bin\\settings_apk-debug.apk"]
+2018-08-03 09:42:05:513 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-08-03 09:42:05:513 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
+2018-08-03 09:42:06:094 - info: [ADB] Getting device platform version
+2018-08-03 09:42:06:094 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:06:126 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:06:126 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","ro.build.version.release"]
+2018-08-03 09:42:06:180 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:06:226 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:06:226 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","dumpsys","window"]
+2018-08-03 09:42:06:438 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-08-03 09:42:06:529 - info: [AndroidDriver] Remote apk path is /data/local/tmp/b78abd45382384a1c2928b83487f4a13.apk
+2018-08-03 09:42:06:530 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:06:543 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:06:544 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ls","/data/local/tmp/b78abd45382384a1c2928b83487f4a13.apk"]
+2018-08-03 09:42:06:677 - info: [debug] [AndroidDriver] Checking if app is installed
+2018-08-03 09:42:06:678 - info: [debug] [ADB] Getting install status for com.aetos
+2018-08-03 09:42:06:679 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:06:700 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:06:700 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","ro.build.version.sdk"]
+2018-08-03 09:42:06:751 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:06:751 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:06:767 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:06:768 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","pm","list","packages","-3","com.aetos"]
+2018-08-03 09:42:07:255 - info: [debug] [ADB] App is  installed
+2018-08-03 09:42:07:256 - info: [debug] [AndroidDriver] Extracting strings from apk C:\Users\Administrator\PycharmProjects\Aetos\AetosTrade\package/AetosTrade.apk null C:\Users\ADMINI~1\AppData\Local\Temp\com.aetos
+2018-08-03 09:42:07:257 - info: [debug] [ADB] Extracting strings for language: default
+2018-08-03 09:42:07:258 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:07:258 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:07:273 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:07:274 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","persist.sys.language"]
+2018-08-03 09:42:07:298 - info: [debug] [ADB] Current device property 'persist.sys.language': zh
+2018-08-03 09:42:08:680 - info: [debug] [ADB] Reading strings from converted strings.json
+2018-08-03 09:42:08:682 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","push","C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.aetos\\strings.json","/data/local/tmp"]
+2018-08-03 09:42:08:746 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-08-03 09:42:08:749 - info: [debug] [ADB] Forwarding system: 4900 to device: 4724
+2018-08-03 09:42:08:750 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","forward","tcp:4900","tcp:4724"]
+2018-08-03 09:42:08:753 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-08-03 09:42:08:754 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-08-03 09:42:08:754 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-08-03 09:42:08:755 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-08-03 09:42:08:755 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","push","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+2018-08-03 09:42:08:883 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-08-03 09:42:08:884 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-08-03 09:42:08:885 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:08:909 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:08:910 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ps"]
+2018-08-03 09:42:08:994 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-08-03 09:42:08:995 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-08-03 09:42:08:995 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","192.168.218.101:5555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.aetos","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-08-03 09:42:09:556 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-08-03 09:42:09:559 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-08-03 09:42:09:562 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-08-03 09:42:09:564 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:09:564 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:09:573 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-08-03 09:42:09:585 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:09:585 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","start","-W","-n","com.aetos/com.aetos.ui.module.core.LoadingActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2018-08-03 09:42:11:240 - info: [Appium] New AndroidDriver session created successfully, session 923b0b79-b3e2-43de-8587-f1f1c4db9ccf added to master session list
+2018-08-03 09:42:11:241 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":true,"platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity","udid":"192.168.218.101:5555"},"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":true,"platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity","udid":"192.168.218.101:5555","deviceUDID":"192.168.218.101:5555"}
+2018-08-03 09:42:11:248 - info: [HTTP] <-- POST /wd/hub/session 200 7131 ms - 925 
+2018-08-03 09:42:21:268 - info: [HTTP] --> POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/timeouts/implicit_wait {"sessionId":"923b0b79-b3e2-43de-8587-f1f1c4db9ccf","ms":15000}
+2018-08-03 09:42:21:270 - info: [debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [15000,"923b0b79-b3e2-43de-8587-f1f1c4db9ccf"]
+2018-08-03 09:42:21:283 - info: [debug] [BaseDriver] Set implicit wait to 15000ms
+2018-08-03 09:42:21:284 - info: [debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+2018-08-03 09:42:21:286 - info: [HTTP] <-- POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/timeouts/implicit_wait 200 17 ms - 76 
+2018-08-03 09:42:21:289 - info: [HTTP] --> POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/timeouts/implicit_wait {"sessionId":"923b0b79-b3e2-43de-8587-f1f1c4db9ccf","ms":15000}
+2018-08-03 09:42:21:289 - info: [debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [15000,"923b0b79-b3e2-43de-8587-f1f1c4db9ccf"]
+2018-08-03 09:42:21:293 - info: [debug] [BaseDriver] Set implicit wait to 15000ms
+2018-08-03 09:42:21:294 - info: [debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+2018-08-03 09:42:21:295 - info: [HTTP] <-- POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/timeouts/implicit_wait 200 6 ms - 76 
+2018-08-03 09:42:21:298 - info: [HTTP] --> POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/element {"using":"id","sessionId":"923b0b79-b3e2-43de-8587-f1f1c4db9ccf","value":"com.aetos:id/login_user_et_account"}
+2018-08-03 09:42:21:299 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.aetos:id/login_user_et_account","923b0b79-b3e2-43de-8587-f1f1c4db9ccf"]
+2018-08-03 09:42:21:303 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-08-03 09:42:21:305 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-08-03 09:42:21:306 - info: [debug] [BaseDriver] Waiting up to 15000 ms for condition
+2018-08-03 09:42:21:310 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.aetos:id/login_user_et_account","context":"","multiple":false}}
+2018-08-03 09:42:21:312 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.aetos:id/login_user_et_account","context":"","multiple":false}}
+2018-08-03 09:42:21:313 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-08-03 09:42:21:313 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-08-03 09:42:21:315 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.aetos:id/login_user_et_account' using 'ID' with the contextId: '' multiple: false
+2018-08-03 09:42:21:316 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.aetos:id/login_user_et_account]
+2018-08-03 09:42:23:187 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2018-08-03 09:42:23:190 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-08-03 09:42:23:204 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+2018-08-03 09:42:23:205 - info: [HTTP] <-- POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/element 200 1906 ms - 87 
+2018-08-03 09:42:23:208 - info: [HTTP] --> POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/element/1/value {"text":"shirlyxlh@126.com","sessionId":"923b0b79-b3e2-43de-8587-f1f1c4db9ccf","id":"1","value":["s","h","i","r","l","y","x","l","h","@","1","2","6",".","c","o","m"]}
+2018-08-03 09:42:23:212 - info: [debug] [MJSONWP] Bad parameters: BadParametersError: Parameters were incorrect. We wanted {"required":["value"]} and you sent ["text","sessionId","id","value"]
+2018-08-03 09:42:23:213 - info: [HTTP] <-- POST /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf/element/1/value 400 5 ms - 106 
+2018-08-03 09:42:23:235 - info: [HTTP] --> DELETE /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf {}
+2018-08-03 09:42:23:236 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["923b0b79-b3e2-43de-8587-f1f1c4db9ccf"]
+2018-08-03 09:42:23:239 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-08-03 09:42:23:242 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:23:260 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:23:260 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","force-stop","com.aetos"]
+2018-08-03 09:42:23:861 - info: [debug] [ADB] Pressing the HOME button
+2018-08-03 09:42:23:861 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:23:881 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:23:881 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","input","keyevent",3]
+2018-08-03 09:42:24:955 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2018-08-03 09:42:24:963 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-08-03 09:42:24:964 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2018-08-03 09:42:24:965 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2018-08-03 09:42:24:967 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2018-08-03 09:42:24:967 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2018-08-03 09:42:24:967 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2018-08-03 09:42:24:968 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2018-08-03 09:42:24:968 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-08-03 09:42:24:968 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-08-03 09:42:24:968 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-08-03 09:42:24:969 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-08-03 09:42:24:969 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-08-03 09:42:24:969 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-08-03 09:42:24:969 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-08-03 09:42:24:969 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-08-03 09:42:24:970 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+2018-08-03 09:42:24:970 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 15.438
+2018-08-03 09:42:24:970 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+2018-08-03 09:42:24:971 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2018-08-03 09:42:24:973 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2018-08-03 09:42:24:973 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-08-03 09:42:24:974 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-08-03 09:42:24:974 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-08-03 09:42:24:974 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:25:025 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:25:025 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ps"]
+2018-08-03 09:42:25:109 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-08-03 09:42:25:109 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-08-03 09:42:25:110 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:25:130 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:25:130 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","force-stop","io.appium.unlock"]
+2018-08-03 09:42:25:856 - info: [debug] [Logcat] Stopping logcat capture
+2018-08-03 09:42:25:862 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2018-08-03 09:42:25:863 - info: [Appium] Removing session 923b0b79-b3e2-43de-8587-f1f1c4db9ccf from our master session list
+2018-08-03 09:42:25:863 - info: [debug] [MJSONWP] Received response: null
+2018-08-03 09:42:25:864 - info: [debug] [MJSONWP] But deleting session, so not returning
+2018-08-03 09:42:25:864 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+2018-08-03 09:42:25:865 - info: [HTTP] <-- DELETE /wd/hub/session/923b0b79-b3e2-43de-8587-f1f1c4db9ccf 200 2630 ms - 76 
+2018-08-03 09:42:25:874 - info: [HTTP] --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"}}
+2018-08-03 09:42:25:874 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"},null,{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},null,null,null,null]
+2018-08-03 09:42:25:875 - info: [Appium] Creating new AndroidDriver session
+2018-08-03 09:42:25:876 - info: [Appium] Capabilities:
+2018-08-03 09:42:25:876 - info: [Appium]   deviceName: '192.168.218.101:5555'
+2018-08-03 09:42:25:877 - info: [Appium]   app: 'C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk'
+2018-08-03 09:42:25:877 - info: [Appium]   noReset: 'true'
+2018-08-03 09:42:25:879 - info: [Appium]   platformVersion: '5.0'
+2018-08-03 09:42:25:880 - info: [Appium]   appPackage: 'com.aetos'
+2018-08-03 09:42:25:880 - info: [Appium]   platformName: 'Android'
+2018-08-03 09:42:25:880 - info: [Appium]   appActivity: 'com.aetos.ui.module.core.LoadingActivity'
+2018-08-03 09:42:25:881 - info: [Appium]   udid: '192.168.218.101:5555'
+2018-08-03 09:42:25:882 - info: [debug] [AndroidDriver] AndroidDriver version: 1.10.38
+2018-08-03 09:42:25:884 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-08-03 09:42:25:902 - info: [BaseDriver] Session created with session id: 16c1ad87-33ba-449f-a653-9f33c1fea6a6
+2018-08-03 09:42:25:904 - info: [debug] [AndroidDriver] Getting Java version
+2018-08-03 09:42:26:032 - info: [AndroidDriver] Java version is: 1.8.0_65
+2018-08-03 09:42:26:033 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:26:035 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:26:036 - info: [AndroidDriver] Retrieving device list
+2018-08-03 09:42:26:036 - info: [debug] [ADB] Trying to find a connected android device
+2018-08-03 09:42:26:036 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:26:052 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:26:053 - info: [AndroidDriver] Using device: 192.168.218.101:5555
+2018-08-03 09:42:26:054 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:26:057 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:26:057 - info: [debug] [ADB] Setting device id to 192.168.218.101:5555
+2018-08-03 09:42:26:058 - info: [BaseDriver] Using local app 'C:\Users\Administrator\PycharmProjects\Aetos\AetosTrade\package/AetosTrade.apk'
+2018-08-03 09:42:26:058 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-08-03 09:42:26:058 - info: [AndroidDriver] Starting Android session
+2018-08-03 09:42:26:059 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","wait-for-device"]
+2018-08-03 09:42:26:185 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:26:211 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:26:212 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","echo","ping"]
+2018-08-03 09:42:26:248 - info: [debug] [Logcat] Starting logcat capture
+2018-08-03 09:42:26:328 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-08-03 09:42:26:328 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\io.appium.settings\\bin\\settings_apk-debug.apk"]
+2018-08-03 09:42:27:175 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-08-03 09:42:27:176 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
+2018-08-03 09:42:27:781 - info: [ADB] Getting device platform version
+2018-08-03 09:42:27:782 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:27:798 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:27:798 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","ro.build.version.release"]
+2018-08-03 09:42:27:904 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:27:920 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:27:921 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","dumpsys","window"]
+2018-08-03 09:42:28:064 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-08-03 09:42:28:113 - info: [AndroidDriver] Remote apk path is /data/local/tmp/b78abd45382384a1c2928b83487f4a13.apk
+2018-08-03 09:42:28:114 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:28:129 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:28:129 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ls","/data/local/tmp/b78abd45382384a1c2928b83487f4a13.apk"]
+2018-08-03 09:42:28:226 - info: [debug] [AndroidDriver] Checking if app is installed
+2018-08-03 09:42:28:226 - info: [debug] [ADB] Getting install status for com.aetos
+2018-08-03 09:42:28:226 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:28:241 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:28:242 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","ro.build.version.sdk"]
+2018-08-03 09:42:28:306 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:28:307 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:28:331 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:28:332 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","pm","list","packages","-3","com.aetos"]
+2018-08-03 09:42:28:873 - info: [debug] [ADB] App is  installed
+2018-08-03 09:42:28:874 - info: [debug] [AndroidDriver] Extracting strings from apk C:\Users\Administrator\PycharmProjects\Aetos\AetosTrade\package/AetosTrade.apk null C:\Users\ADMINI~1\AppData\Local\Temp\com.aetos
+2018-08-03 09:42:28:875 - info: [debug] [ADB] Extracting strings for language: default
+2018-08-03 09:42:28:875 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:28:876 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:28:903 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:28:904 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","getprop","persist.sys.language"]
+2018-08-03 09:42:28:956 - info: [debug] [ADB] Current device property 'persist.sys.language': zh
+2018-08-03 09:42:30:113 - info: [debug] [ADB] Reading strings from converted strings.json
+2018-08-03 09:42:30:115 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","push","C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\com.aetos\\strings.json","/data/local/tmp"]
+2018-08-03 09:42:30:192 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-08-03 09:42:30:192 - info: [debug] [ADB] Forwarding system: 4900 to device: 4724
+2018-08-03 09:42:30:193 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","forward","tcp:4900","tcp:4724"]
+2018-08-03 09:42:30:195 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-08-03 09:42:30:195 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-08-03 09:42:30:195 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-08-03 09:42:30:196 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-08-03 09:42:30:196 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","push","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+2018-08-03 09:42:30:308 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-08-03 09:42:30:309 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-08-03 09:42:30:309 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:30:373 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:30:374 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ps"]
+2018-08-03 09:42:30:485 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-08-03 09:42:30:485 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-08-03 09:42:30:486 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","192.168.218.101:5555","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.aetos","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-08-03 09:42:30:884 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-08-03 09:42:30:886 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-08-03 09:42:30:887 - info: [debug] [ADB] Device API level: 21
+2018-08-03 09:42:30:887 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:30:905 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-08-03 09:42:30:923 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:30:923 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","start","-W","-n","com.aetos/com.aetos.ui.module.core.LoadingActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2018-08-03 09:42:33:032 - info: [Appium] New AndroidDriver session created successfully, session 16c1ad87-33ba-449f-a653-9f33c1fea6a6 added to master session list
+2018-08-03 09:42:33:033 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":true,"platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity","udid":"192.168.218.101:5555"},"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":true,"platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity","udid":"192.168.218.101:5555","deviceUDID":"192.168.218.101:5555"}
+2018-08-03 09:42:33:034 - info: [HTTP] <-- POST /wd/hub/session 200 7160 ms - 925 
+2018-08-03 09:42:43:041 - info: [HTTP] --> POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/timeouts/implicit_wait {"sessionId":"16c1ad87-33ba-449f-a653-9f33c1fea6a6","ms":15000}
+2018-08-03 09:42:43:043 - info: [debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [15000,"16c1ad87-33ba-449f-a653-9f33c1fea6a6"]
+2018-08-03 09:42:43:052 - info: [debug] [BaseDriver] Set implicit wait to 15000ms
+2018-08-03 09:42:43:053 - info: [debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+2018-08-03 09:42:43:054 - info: [HTTP] <-- POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/timeouts/implicit_wait 200 13 ms - 76 
+2018-08-03 09:42:43:058 - info: [HTTP] --> POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/timeouts/implicit_wait {"sessionId":"16c1ad87-33ba-449f-a653-9f33c1fea6a6","ms":15000}
+2018-08-03 09:42:43:059 - info: [debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [15000,"16c1ad87-33ba-449f-a653-9f33c1fea6a6"]
+2018-08-03 09:42:43:064 - info: [debug] [BaseDriver] Set implicit wait to 15000ms
+2018-08-03 09:42:43:065 - info: [debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+2018-08-03 09:42:43:066 - info: [HTTP] <-- POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/timeouts/implicit_wait 200 7 ms - 76 
+2018-08-03 09:42:43:072 - info: [HTTP] --> POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/element {"using":"id","sessionId":"16c1ad87-33ba-449f-a653-9f33c1fea6a6","value":"com.aetos:id/login_user_et_account"}
+2018-08-03 09:42:43:073 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.aetos:id/login_user_et_account","16c1ad87-33ba-449f-a653-9f33c1fea6a6"]
+2018-08-03 09:42:43:079 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-08-03 09:42:43:080 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-08-03 09:42:43:080 - info: [debug] [BaseDriver] Waiting up to 15000 ms for condition
+2018-08-03 09:42:43:081 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.aetos:id/login_user_et_account","context":"","multiple":false}}
+2018-08-03 09:42:43:083 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.aetos:id/login_user_et_account","context":"","multiple":false}}
+2018-08-03 09:42:43:085 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-08-03 09:42:43:086 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-08-03 09:42:43:086 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.aetos:id/login_user_et_account' using 'ID' with the contextId: '' multiple: false
+2018-08-03 09:42:43:086 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.aetos:id/login_user_et_account]
+2018-08-03 09:42:44:898 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-08-03 09:42:44:912 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+2018-08-03 09:42:44:915 - info: [HTTP] <-- POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/element 200 1841 ms - 87 
+2018-08-03 09:42:44:915 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+2018-08-03 09:42:44:920 - info: [HTTP] --> POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/element/1/value {"text":"shirlyxlh@126.com","sessionId":"16c1ad87-33ba-449f-a653-9f33c1fea6a6","id":"1","value":["s","h","i","r","l","y","x","l","h","@","1","2","6",".","c","o","m"]}
+2018-08-03 09:42:44:923 - info: [debug] [MJSONWP] Bad parameters: BadParametersError: Parameters were incorrect. We wanted {"required":["value"]} and you sent ["text","sessionId","id","value"]
+2018-08-03 09:42:44:924 - info: [HTTP] <-- POST /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6/element/1/value 400 3 ms - 106 
+2018-08-03 09:42:44:928 - info: [HTTP] --> DELETE /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6 {}
+2018-08-03 09:42:44:928 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["16c1ad87-33ba-449f-a653-9f33c1fea6a6"]
+2018-08-03 09:42:44:929 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-08-03 09:42:44:936 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:44:983 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:44:984 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","force-stop","com.aetos"]
+2018-08-03 09:42:45:520 - info: [debug] [ADB] Pressing the HOME button
+2018-08-03 09:42:45:520 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:45:561 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:45:561 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","input","keyevent",3]
+2018-08-03 09:42:46:171 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2018-08-03 09:42:46:191 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2018-08-03 09:42:46:191 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2018-08-03 09:42:46:193 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-08-03 09:42:46:196 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2018-08-03 09:42:46:196 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2018-08-03 09:42:46:279 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2018-08-03 09:42:46:279 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-08-03 09:42:46:279 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-08-03 09:42:46:280 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-08-03 09:42:46:280 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:46:325 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:46:326 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","ps"]
+2018-08-03 09:42:46:652 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-08-03 09:42:46:652 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-08-03 09:42:46:653 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:46:912 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:46:913 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","am","force-stop","io.appium.unlock"]
+2018-08-03 09:42:47:454 - info: [debug] [Logcat] Stopping logcat capture
+2018-08-03 09:42:47:456 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2018-08-03 09:42:47:457 - info: [Appium] Removing session 16c1ad87-33ba-449f-a653-9f33c1fea6a6 from our master session list
+2018-08-03 09:42:47:457 - info: [debug] [MJSONWP] Received response: null
+2018-08-03 09:42:47:457 - info: [debug] [MJSONWP] But deleting session, so not returning
+2018-08-03 09:42:47:457 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+2018-08-03 09:42:47:458 - info: [HTTP] <-- DELETE /wd/hub/session/16c1ad87-33ba-449f-a653-9f33c1fea6a6 200 2530 ms - 76 
+2018-08-03 09:42:47:466 - info: [HTTP] --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"}}
+2018-08-03 09:42:47:467 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.218.101:5555","app":"C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk","noReset":"true","platformVersion":"5.0","appPackage":"com.aetos","platformName":"Android","appActivity":"com.aetos.ui.module.core.LoadingActivity"},null,{"alwaysMatch":{"platformName":"Android"},"firstMatch":[{}]},null,null,null,null,null,null]
+2018-08-03 09:42:47:468 - info: [Appium] Creating new AndroidDriver session
+2018-08-03 09:42:47:468 - info: [Appium] Capabilities:
+2018-08-03 09:42:47:469 - info: [Appium]   deviceName: '192.168.218.101:5555'
+2018-08-03 09:42:47:469 - info: [Appium]   app: 'C:\\Users\\Administrator\\PycharmProjects\\Aetos\\AetosTrade\\package/AetosTrade.apk'
+2018-08-03 09:42:47:469 - info: [Appium]   noReset: 'true'
+2018-08-03 09:42:47:469 - info: [Appium]   platformVersion: '5.0'
+2018-08-03 09:42:47:469 - info: [Appium]   appPackage: 'com.aetos'
+2018-08-03 09:42:47:469 - info: [Appium]   platformName: 'Android'
+2018-08-03 09:42:47:470 - info: [Appium]   appActivity: 'com.aetos.ui.module.core.LoadingActivity'
+2018-08-03 09:42:47:470 - info: [Appium]   udid: '192.168.218.101:5555'
+2018-08-03 09:42:47:472 - info: [debug] [AndroidDriver] AndroidDriver version: 1.10.38
+2018-08-03 09:42:47:473 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-08-03 09:42:47:476 - info: [BaseDriver] Session created with session id: fb5b9b25-d7e8-4fb9-b084-0eafab01d509
+2018-08-03 09:42:47:477 - info: [debug] [AndroidDriver] Getting Java version
+2018-08-03 09:42:47:616 - info: [AndroidDriver] Java version is: 1.8.0_65
+2018-08-03 09:42:47:617 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:47:620 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:47:621 - info: [AndroidDriver] Retrieving device list
+2018-08-03 09:42:47:621 - info: [debug] [ADB] Trying to find a connected android device
+2018-08-03 09:42:47:621 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:47:645 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:47:646 - info: [AndroidDriver] Using device: 192.168.218.101:5555
+2018-08-03 09:42:47:646 - info: [ADB] Checking whether adb is present
+2018-08-03 09:42:47:650 - info: [ADB] Using adb.exe from D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2018-08-03 09:42:47:651 - info: [debug] [ADB] Setting device id to 192.168.218.101:5555
+2018-08-03 09:42:47:651 - info: [BaseDriver] Using local app 'C:\Users\Administrator\PycharmProjects\Aetos\AetosTrade\package/AetosTrade.apk'
+2018-08-03 09:42:47:651 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-08-03 09:42:47:652 - info: [AndroidDriver] Starting Android session
+2018-08-03 09:42:47:653 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","wait-for-device"]
+2018-08-03 09:42:47:673 - info: [debug] [ADB] Getting connected devices...
+2018-08-03 09:42:47:688 - info: [debug] [ADB] 1 device(s) connected
+2018-08-03 09:42:47:689 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","shell","echo","ping"]
+2018-08-03 09:42:47:784 - info: [debug] [Logcat] Starting logcat capture
+2018-08-03 09:42:47:879 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-08-03 09:42:47:879 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\io.appium.settings\\bin\\settings_apk-debug.apk"]
+2018-08-03 09:42:49:235 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-08-03 09:42:49:235 - info: [debug] [ADB] Running 'D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","192.168.218.101:5555","install","C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
