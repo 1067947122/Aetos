@@ -4,4 +4,3 @@ import chardet
 a = '1'.decode().encode('gbk')
 print(chardet.detect(a))
 
-

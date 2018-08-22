@@ -2,11 +2,6 @@
 #-*- coding:utf-8 -*-
 from utils.get_by_local import GetByLocal
 import time
-from base.base_driver import Driver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 class HomePage:
     '''获取首页页面所有的页面元素信息'''
     def __init__(self,driver):
@@ -37,3 +32,5 @@ class HomePage:
         获取我元素信息
         '''
         return self.get_by_local.get_element('self_tab', 'home_page_element')
+
+

@@ -5,7 +5,7 @@ from base.base_driver import Driver
 from business.login_business import LoginBusiness
 from page.home_page import HomePage
 from utils.write_txt import WriteTxt
-from handle.login_handle import LoginHandle
+
 class Login(unittest.TestCase):
 
     @classmethod

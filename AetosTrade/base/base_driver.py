@@ -12,14 +12,14 @@ class Driver:
 
     def android_driver(self,i):
 
-        print("this is android_driver:",i)
+        # print("this is android_driver:",i)
         write_file = WriteUserCommand()
         devices = write_file.get_value('user_info_' + str(i), 'deviceName')
         port = write_file.get_value('user_info_' + str(i), 'port')
         # platformVersion = self.cmd.excute_cmd_result('adb shell getprop ro.build.version.release')[0].strip() #获取Android版本
         # pack = self.cmd.excute_cmd_result('aapt dump badging ' + APP_PATH) #获取apppackage
         # appPackage = re.findall(r'\'com\w*.*?\'', pack[0])[0]
-        print(devices,port)
+
 
         dic = {
             'platformName' : 'Android',
@@ -30,11 +30,12 @@ class Driver:
             'app': APP_PATH,
             'noReset' : 'true',
             # 'noSign': 'true',
-            # 'automationName':'uiautomator2'
+            #'automationName': 'selendroid'        #'uiautomator2'
 
         }
         driver = webdriver.Remote('http://127.0.0.1:' + '4723' + '/wd/hub', dic)
-        driver.implicitly_wait(15)
+        driver.implicitly_wait(20)
+
         return driver
 
 if __name__ == '__main__':
